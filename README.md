@@ -8,4 +8,4 @@ AVNC is Virtual Network Computing developed by electronjs and webrtc.
 
 AVNC server is the program on the machine that shares some screen (and may not be related to a physical display – the server can be "headless"), and allows the client to share control of it.
 
-![client](img/3Capture.png)
+![client](img/4Capture.png)
