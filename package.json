@@ -1,0 +1,45 @@
+{
+  "name": "avnc",
+  "version": "1.0.0",
+  "description": "Screen sharing and controling of key and mouse",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-packager . AVNC --platform=win32 --arch=x64 --asar --version=0.37.8 --icon=.\\img\\Icon.ico --protocol-name=\"AVNC URL\" --protocol=\"avnc\" --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --ignore=node_modules/browserify --ignore=node_modules/wzrd --ignore=node_modules/standard",
+    "css": "node-sass stylesheets/sass/avnc.scss stylesheets/css/avnc.css --watch",
+    "test": "standard",
+    "rebuild": "cd node_modules/robotjs && set HOME=~/.electron-gyp && node-gyp rebuild --target=0.37.8 --arch=x64 --dist-url=https://atom.io/download/atom-shell"
+  },
+  "author": "alonewolf",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "clipboard": "^2.0.6",
+    "domify": "^1.4.0",
+    "electron": "^8.1.1",
+    "electron-clipboard-extended": "^1.1.1",
+    "electron-rebuild": "^1.10.1",
+    "jQuery": "^1.7.4",
+    "menubar": "^5.0.0",
+    "multicast-dns": "^3.0.0",
+    "nets": "^3.2.0",
+    "node-windows": "^1.0.0-beta.1",
+    "read-chunk": "^3.2.0",
+    "shell": "^0.5.0",
+    "simple-peer": "^9.6.2",
+    "ssejson": "^1.2.0",
+    "temp-dir": "^2.0.0",
+    "vkey": "^1.0.1"
+  },
+  "optionalDependencies": {
+    "robotjs": "^0.6.0"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "electron-packager": "^4.1.0",
+    "node-sass": "^4.13.1",
+    "standard": "^5.3.1",
+    "tachyons": "^1.2.0",
+    "wzrd": "^1.2.1"
+  },
+  "homepage": "https://avnc"
+}
